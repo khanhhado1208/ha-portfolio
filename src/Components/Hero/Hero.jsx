@@ -40,19 +40,17 @@ function Hero() {
         <h2>Skills</h2>
         <div className="about-skills">
           <div className="about-skill">
-            <p>C/C++</p> <hr style={{ width: "100%" }} />
+            <p>Programming languages: C, C++, embedded C, Python, R, JavaScript, Nodejs, Html, CSS, HDL.</p> <hr style={{ width: "100%" }} />
           </div>
           <div className="about-skill">
-            <p>Embedded C</p> <hr style={{ width: "100%" }} />
+            <p>Database: MongoDB.</p> <hr style={{ width: "100%" }} />
           </div>
           <div className="about-skill">
-            <p>Python</p> <hr style={{ width: "100%" }} />
+            <p>Tools and Platforms: Microsoft Office, Jira, Jenkins, Confluence, ROS, Linux.</p> <hr style={{ width: "100%" }} />
           </div>
           <div className="about-skill">
-            <p>R</p> <hr style={{ width: "100%" }} />
-          </div>
-          <div className="about-skill">
-            <p>JavaScript, Node.js</p> <hr style={{ width: "100%" }} />
+            <p>Other skills: Communication Skills, Customer Services, CI/CD, Scrum,
+            Test Automation Frameworks, Agile Methodologies.</p> <hr style={{ width: "100%" }} />
           </div>
         </div>
       </div>
@@ -61,20 +59,19 @@ function Hero() {
       <div>
         <h2>Work Experiences</h2>
         <p>
-        <h4>Software designer – summer trainee May 2023 – August 2023</h4>
-        <h5> Software designer – summer trainee</h5>
+        <h4>Aion Power, Finland | Nov 2023 – Feb 2024</h4>
+        <h5> Software trainee</h5>
         </p>
         <ul>
-          <li>Software development of embedded crane control system board</li>
-          <li>Software testing of the control board in system and integration testing levels.</li>
-          <li>Software documentation.</li>
-          <li>Developing software for a safety-critical control system using embedded C within an agile international team.</li>
-          <li>Enthusiastic entry-level embedded systems engineer with a foundation in memory management and testing methodologies for microcontroller units (MCUs) like STM32 F2 and F4. 
-            Demonstrated understanding in detecting memory leaks and supporting MCU platform upgradability. Proficient in manual and automated testing techniques, with a keen focus on crane simulator and real crane applications.</li>
+          <li>Assisted in LabVIEW software development, testing, and documentation.</li>
+          <li>Contributed to the development of the company's software development environment and practices.</li>
+          <li>Supported the implementation of the company's ISO9001 quality management system, ensuring compliance with standards and procedures.</li>
         </ul>
+        <br/>
+        <hr style={{ width: "100%" }} />
         <p>
-          <br/>
-        <h5>Innovation Project Course | Sept 2023 – December 2023</h5>
+          <h4>Konecranes, Finland</h4>
+        <h4>Innovation Project Course | Sept 2023 – December 2023</h4>
         <ul>
           <li>Explored advanced industrial automation concepts using ESP32 microcontrollers, focusing on UART, WebSocket communication, and Wi-Fi data transmission.</li>
           <li>Collaborated with industry professionals from Konecranes to enhance real-world problem-solving skills and integrate IoT solutions.</li>
@@ -82,14 +79,14 @@ function Hero() {
         </ul>
         </p>
         <br/>
-        <hr style={{ width: "100%" }} />
         <p>
-        <h4>Aion Power, Finland | Nov 2023 – Feb 2024</h4>
-        <h5> Software trainee</h5>
+        <h4>Software designer – summer trainee May 2023 – August 2023</h4>
         <ul>
-          <li>Assisted in LabVIEW software development, testing, and documentation.</li>
-          <li>Contributed to the development of the company's software development environment and practices.</li>
-          <li>Supported the implementation of the company's ISO9001 quality management system, ensuring compliance with standards and procedures.</li>
+          <li>Software development of embedded crane control system board.</li>
+          <li>Software testing of the control board in system and integration testing levels.</li>
+          <li>Software documentation.</li>
+          <li>Developing software for a safety-critical control system using embedded C within an agile international team.</li>
+          <li>Enthusiastic entry-level embedded systems engineer with a foundation in memory management and testing methodologies for microcontroller units (MCUs) like STM32 F2 and F4. Demonstrated understanding in detecting memory leaks and supporting MCU platform upgradability. Proficient in manual and automated testing techniques, with a keen focus on crane simulator and real crane applications.</li>
         </ul>
         </p>
       </div>

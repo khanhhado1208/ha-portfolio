@@ -11,7 +11,7 @@ export const BlogDetail = () => {
 
   useEffect(() => {
     if (blog?.htmlPath) {
-      // Fetch nội dung HTML từ file
+      // Fetch contents TML from file
       fetch(blog.htmlPath)
         .then((response) => response.text())
         .then((data) => setHtmlContent(data))
