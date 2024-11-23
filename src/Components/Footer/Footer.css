@@ -1,0 +1,10 @@
+.footer {
+    background-color: linear-gradient(to bottom, #e6e6fa, #fdfdfd);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
