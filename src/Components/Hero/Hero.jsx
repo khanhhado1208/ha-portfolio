@@ -40,13 +40,13 @@ function Hero() {
         <h2>Skills</h2>
         <div className="about-skills">
           <div className="about-skill">
-            <p>Programming languages: C, C++, embedded C, Python, R, JavaScript, Nodejs, Html, CSS, HDL.</p> <hr style={{ width: "100%" }} />
+            <p>Programming languages: C, C++, embedded C, Python, R, JavaScript, Nodejs, Html, CSS, VHDL.</p> <hr style={{ width: "100%" }} />
           </div>
           <div className="about-skill">
             <p>Database: MongoDB.</p> <hr style={{ width: "100%" }} />
           </div>
           <div className="about-skill">
-            <p>Tools and Platforms: Microsoft Office, Jira, Jenkins, Confluence, ROS, Linux.</p> <hr style={{ width: "100%" }} />
+            <p>Tools and Platforms: Microsoft Office, Jira, Jenkins, Confluence, ROS2, Linux.</p> <hr style={{ width: "100%" }} />
           </div>
           <div className="about-skill">
             <p>Other skills: Communication Skills, Customer Services, CI/CD, Scrum,
