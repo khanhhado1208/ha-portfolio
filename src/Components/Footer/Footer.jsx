@@ -22,7 +22,7 @@ export const Footer = () => {
           <FaDiscord />
         </a>
       </div>
-      <p>&copy; 2024 HA DO. All Rights Reserved. </p>
+      <p>&copy; 2024 HA DO. All Rights Reserved. Crafted with 💻 and ⚡ by Hà Do using <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite</a></p>
     </footer>
   );
 };
