@@ -18,7 +18,7 @@ function Hero() {
           the University of Turku.
         </h1>
         <p className="slogan"> 
-    Coding is a language, mathematics is the mindset – with the right mindset, you can make a difference!
+        Coding speaks, math thinks – forget syntax, math builds logic, and logic transforms developers into engineers.
   </p>
         <p>
           I am passionate about technology, especially robotics, and I enjoy reading books to
