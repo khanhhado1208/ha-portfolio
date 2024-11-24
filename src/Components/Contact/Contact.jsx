@@ -3,7 +3,8 @@ import "./Contact.css";
 import ContactImg from "../../assets/contactImg.png";
 
 export const Contact = () => {
-  const [status, setStatus] = useState("");
+  const [popupMessage, setPopupMessage] = useState(""); // Nội dung hiển thị popup
+  const [popupVisible, setPopupVisible] = useState(false); // Trạng thái hiển thị popup
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -12,6 +13,8 @@ export const Contact = () => {
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
+
+    const senderName = formData.get("name"); // Lấy tên người gửi
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -24,20 +27,25 @@ export const Contact = () => {
       }).then((res) => res.json());
 
       if (res.success) {
-        setStatus("Message sent successfully!");
+        setPopupMessage(
+          `Hi ${senderName}! Your message was sent successfully to Hà Đỗ. Hà Đỗ will respond to you as soon as possible.`
+        );
+        setPopupVisible(true); // display pop up 
         console.log("Success:", res);
       } else {
-        setStatus("Failed to send message. Please try again.");
+        setPopupMessage("Failed to send message. Please try again.");
+        setPopupVisible(true); // display pop up 
         console.error("Error:", res.message);
       }
     } catch (error) {
-      setStatus("An error occurred. Please try again later.");
+      setPopupMessage("An error occurred. Please try again later.");
+      setPopupVisible(true); // display pop up 
       console.error("Error:", error);
     }
   };
 
   return (
-    <div id = "contact" className="contact-container">
+    <div id="contact" className="contact-container">
       <div className="contact-left">
         <h1>Let's talk</h1>
         <div className="contact-image">
@@ -51,7 +59,6 @@ export const Contact = () => {
 
       <div className="contact-right">
         <h2>Contact Me</h2>
-        {status && <p className="status-message">{status}</p>} {}
         <form onSubmit={onSubmit}>
           <div className="input-box">
             <label>Full Name</label>
@@ -87,6 +94,20 @@ export const Contact = () => {
           </button>
         </form>
       </div>
+
+      {popupVisible && (
+        <div className="popup-overlay">
+          <div className="popup-container">
+            <p>{popupMessage}</p> { }
+            <button
+              onClick={() => setPopupVisible(false)}
+              className="close-popup-btn"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
