@@ -17,6 +17,9 @@ function Hero() {
           I am Hà, 1st-year master's student in Robotics and Autonomous Systems at
           the University of Turku.
         </h1>
+        <p className="slogan"> 
+    Coding is a language, mathematics is the mindset – with the right mindset, you can make a difference!
+  </p>
         <p>
           I am passionate about technology, especially robotics, and I enjoy reading books to
           expand my knowledge. In my free time, I like learning new things, such as programming
