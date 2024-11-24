@@ -13,22 +13,22 @@
 }
 
 .slogan {
-  font-family: "Edu AU VIC WA NT Arrows", cursive;
+  font-family: "Pacifico", cursive;
   font-size: 0rem;
 }
 .slogan {
-  font-family: 'Edu AU VIC WA NT Arrows', cursive;
+  font-family: 'Pacifico', cursive;
   font-style: normal;
-  background: linear-gradient(to right, rgb(17, 17, 17), #1f1f1e);
+  background: linear-gradient(to right, rgb(201, 82, 181), #1f1f1e);
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .slogan {
-  font-family: 'Edu AU VIC WA NT Arrows', cursive;
+  font-family: 'Pacifico', cursive;
   font-size: 1.6rem;
   color: #060606;
-  text-shadow: 0 0 20px #2e3903, 0 0 10px rgb(232, 84, 180), 0 0 40px #514f50;
+  text-shadow: 0 0 20px #aabe5d, 0 0 10px rgb(232, 84, 180), 0 0 40px #514f50;
 }
 
 .profile-img {
