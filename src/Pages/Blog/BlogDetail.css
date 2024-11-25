@@ -8,13 +8,14 @@
 }
 
 .download-link {
+  color: #0056b3;
   text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  margin-bottom: 10px;
+  transition: color 0.2s ease-in-out;
 }
 
 .download-link:hover {
   color: #0056b3;
   text-decoration: underline;
 }
+
+

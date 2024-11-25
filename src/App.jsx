@@ -29,11 +29,10 @@ function App() {
       <ScrollToHash />
       <Header />
       <Routes>
-    
         <Route path="/" element={<div><Hero /><Contact /></div>} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogDetail />} />
+        <Route path="/blog/:id" element={<BlogDetail />} /> {/* blog details page*/}
       </Routes>
       <Footer />
     </Router>

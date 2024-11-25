@@ -11,16 +11,25 @@ export const Projects = () => {
 
   return (
     <div className="projects-container">
-  <h1>My Projects</h1>
-  <section className="projects-list">
-    <div className="project-card">
-      <img
-        src={quoteGeneratorImg}
-        alt="Squid Game Quote Generator"
-        className="project-image"
-      />
-      <h2>Squid Game quote generator</h2>
-      <p>
+      <h2>My Projects</h2>
+      <h3>
+        Welcome to my Projects! I'm actively working on ideas and prototypes related to robotics, autonomous systems, and software engineering.
+        In the near future, this section will feature implementations of ROS-based systems, C++ algorithms, and other innovative solutions. Stay tuned as I continue to develop and share my work here!
+
+
+      </h3>
+      <p className="note">
+        Note: Many of my ROS-based projects are developed in Linux environments and require specific configurations to run. For these, I may include video demos, HTML files, or GitHub links to provide insights and easy access.
+      </p>
+      <section className="projects-list">
+        <div className="project-card">
+          <img
+            src={quoteGeneratorImg}
+            alt="Squid Game Quote Generator"
+            className="project-image"
+          />
+          <h2>Squid Game quote generator</h2>
+          <p>
             The <strong>Quote Generator in Squid Game movie</strong> is a simple web application I built as a learning project.{" "}
             {showFullText && (
               <>
@@ -35,15 +44,14 @@ export const Projects = () => {
           <button className="read-more-button" onClick={toggleReadMore}>
             {showFullText ? "Read Less" : "Read More"}
           </button>
-      <div className="project-links">
-        <a href="https://quote-generator-ha-do.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
-        <a href="https://github.com/khanhhado1208/quote-generator.git" target="_blank" rel="noopener noreferrer">Source Code</a>
-      </div>
-    </div>
+          <div className="project-links">
+            <a href="https://quote-generator-ha-do.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a href="https://github.com/khanhhado1208/quote-generator.git" target="_blank" rel="noopener noreferrer">Source Code</a>
+          </div>
+        </div>
 
-    
-  </section>
-</div>
+      </section>
+    </div>
 
   );
 };

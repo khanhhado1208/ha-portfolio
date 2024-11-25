@@ -6,7 +6,15 @@ import "./Blog.css";
 export const Blog = () => {
   return (
     <div className="blog-container">
-      <h1>My Blog</h1>
+      <h2>My Blog</h2>
+      <h3>
+        Welcome to my blog! Here, I share reports and insights from my studies in data analysis,
+        along with other topics I find interesting. Stay tuned for updates!
+      </h3>
+      <p className="note">
+        Note: Some of my reports, like those written in R or Jupyter Notebook, are better suited for this blog format
+        instead of the Projects section.
+      </p>
       <div className="blog-list">
         {blogsData.map((blog) => (
           <div key={blog.id} className="blog-item">

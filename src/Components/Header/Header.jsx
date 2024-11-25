@@ -24,6 +24,7 @@ export const Header = () => {
         <img src={logo} alt="Logo" style={{ width: "200px", height: "70px" }} />
       </div>
 
+      {/* Hamburger Menu */}
       <div
         className={`hamburger ${isMobileMenuOpen ? "active" : ""}`}
         onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
@@ -33,6 +34,7 @@ export const Header = () => {
         <div></div>
       </div>
 
+      {/* Navigation Menu */}
       <nav className={`nav-container ${isMobileMenuOpen ? "active" : ""}`}>
         <ul className="nav-menu">
           <li
@@ -49,6 +51,7 @@ export const Header = () => {
             className={menu === "Projects" ? "active" : ""}
             onClick={() => {
               setMenu("Projects");
+              navigate("/projects");
               setMobileMenuOpen(false);
             }}
           >
@@ -58,6 +61,7 @@ export const Header = () => {
             className={menu === "Blog" ? "active" : ""}
             onClick={() => {
               setMenu("Blog");
+              navigate("/blog");
               setMobileMenuOpen(false);
             }}
           >

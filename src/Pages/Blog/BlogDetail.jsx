@@ -11,7 +11,7 @@ export const BlogDetail = () => {
 
   useEffect(() => {
     if (blog?.htmlPath) {
-      // Fetch contents TML from file
+      // Fetch contents from HTML file
       fetch(blog.htmlPath)
         .then((response) => response.text())
         .then((data) => setHtmlContent(data))
@@ -28,7 +28,7 @@ export const BlogDetail = () => {
       <h1>{blog.title}</h1>
       <p>{blog.date}</p>
       <div className="blog-content">
-        {/* Show content from Html path */}
+        {/* Render HTML content */}
         {blog.htmlPath ? (
           <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         ) : (
@@ -36,8 +36,8 @@ export const BlogDetail = () => {
         )}
       </div>
 
-      {/* Show download file lists */}
-      {blog.fileDownloads && (
+      {/* Download files section */}
+      {blog.fileDownloads?.length > 0 && (
         <div className="download-section">
           <h3>Available Files for Download:</h3>
           <ul>
