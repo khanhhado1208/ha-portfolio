@@ -1,10 +1,9 @@
 import React from "react";
 import "./Hero.css";
 import profile from "../../assets/profile.png";
-import heroImg from "../../assets/heroImg.png";
-
 function Hero() {
   return (
+  
     <div className="container">
       {/* Hero Section */}
       <div className="hero">
@@ -21,12 +20,12 @@ function Hero() {
             languages or exploring the field of artificial intelligence.
           </p>
           <div className="slogan-container">
-            <img src={heroImg} alt="Hero Image" className="floating-img" />
+           
             <p className="slogan">
               Coding speaks, math thinks – forget syntax, math builds logic, and logic transforms developers into engineers.
             </p>
           </div>
-
+    
         </div>
       </div>
 
@@ -101,7 +100,6 @@ function Hero() {
         </div>
       </div>
     </div>
-
   );
 }
 

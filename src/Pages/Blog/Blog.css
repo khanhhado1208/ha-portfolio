@@ -53,3 +53,34 @@
   .body{
     background: linear-gradient(180deg, #e6e6fa, #fdfdfd);
   }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  /* Change collumn in small screem*/
+  .blog-item {
+    width: calc(50% - 20px); /* 2 column on tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Change collumn in smaller screem*/
+  .blog-item {
+    width: 100%; /* 1 column on mobile */
+  }
+
+  .blog-content h2 {
+    font-size: 1.2rem; /* resize font for tittle */
+  }
+
+  .blog-content .blog-date {
+    font-size: 0.8rem; /* resize font for date */
+  }
+
+  .read-more {
+    font-size: 0.9rem; /* resize font for "Read More" */
+  }
+
+  .blog-thumbnail {
+    height: 150px; /* resize height for photo */
+  }
+}

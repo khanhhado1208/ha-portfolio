@@ -27,6 +27,7 @@ body {
   background: linear-gradient(to bottom, #e6e6fa, #ffffff);
   padding-bottom: 50px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .hero-image img {
@@ -40,6 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-weight: bold;
 }
 
 .hero-content h2 {
@@ -113,6 +115,7 @@ ul li {
 /* Work Experiences */
 .work-experience {
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .work-experience h4 {
@@ -133,6 +136,7 @@ ul li {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  font-weight: bold;
 }
 
 .about-skill {
@@ -143,4 +147,7 @@ ul li {
   padding: 5px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
 }
+
+
