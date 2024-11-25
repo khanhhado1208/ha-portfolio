@@ -3,8 +3,8 @@ import "./Contact.css";
 import ContactImg from "../../assets/contactImg.png";
 
 export const Contact = () => {
-  const [popupMessage, setPopupMessage] = useState(""); // Nội dung hiển thị popup
-  const [popupVisible, setPopupVisible] = useState(false); // Trạng thái hiển thị popup
+  const [popupMessage, setPopupMessage] = useState(""); // pop up the contents
+  const [popupVisible, setPopupVisible] = useState(false); // popUp state
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -14,7 +14,7 @@ export const Contact = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const senderName = formData.get("name"); // Lấy tên người gửi
+    const senderName = formData.get("name"); // getter name from sender
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
