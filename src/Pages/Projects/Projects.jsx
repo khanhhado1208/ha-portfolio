@@ -28,7 +28,7 @@ export const Projects = () => {
                 The app fetches quotes dynamically from the API, allowing users to generate random quotes from the Squid Game movie.
                 This project helped me practice both frontend and backend skills, including React, API integration, and deployment with Vercel.
                 <br />
-                The API source code is available <a href="https://github.com/khanhhado1208/squid-game-api" target="_blank" rel="noopener noreferrer">here</a>, and it is deployed on Vercel for public access.
+                The API source code is available <a href="https://github.com/khanhhado1208/squidGame-API.git" target="_blank" rel="noopener noreferrer">here</a>, and it is deployed on Vercel for public access.
               </>
             )}
           </p>
@@ -37,7 +37,7 @@ export const Projects = () => {
           </button>
       <div className="project-links">
         <a href="https://quote-generator-ha-do.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
-        <a href="https://github.com/khanhhado1208/quote-generator" target="_blank" rel="noopener noreferrer">Source Code</a>
+        <a href="https://github.com/khanhhado1208/quote-generator.git" target="_blank" rel="noopener noreferrer">Source Code</a>
       </div>
     </div>
 
