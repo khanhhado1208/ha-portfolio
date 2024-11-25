@@ -1,9 +1,8 @@
 .blog-container {
   padding: 20px;
-  width: 100%; 
-  max-width: 100%; 
-  margin: 0 auto;
-  background: linear-gradient(180deg, #e6e6fa, #fdfdfd);
+  max-width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #e6e6fa, #fdfdfd);
   }
   
   .blog-list {
