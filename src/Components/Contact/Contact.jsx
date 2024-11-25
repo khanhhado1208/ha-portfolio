@@ -61,11 +61,11 @@ export const Contact = () => {
         <h2>Contact Me</h2>
         <form onSubmit={onSubmit}>
           <div className="input-box">
-            <label>Full Name</label>
+            <label>Name</label>
             <input
               type="text"
               className="field"
-              placeholder="Enter your name"
+              placeholder="Enter your name (required)" 
               name="name"
               required
             />
@@ -75,16 +75,16 @@ export const Contact = () => {
             <input
               type="email"
               className="field"
-              placeholder="Enter your email"
+              placeholder="Enter your email (required)"
               name="email"
               required
             />
           </div>
           <div className="input-box">
-            <label>Your Message</label>
+            <label>Your Message </label>
             <textarea
               className="field mess"
-              placeholder="Enter your message here..."
+              placeholder="Enter your message here...(required)"
               name="message"
               required
             ></textarea>
