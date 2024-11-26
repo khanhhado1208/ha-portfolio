@@ -61,8 +61,8 @@ function Hero() {
 
           {/* Aion Power */}
           <div className="work-experience">
-            <h4>Aion Power, Finland | Nov 2023 – Feb 2024</h4>
-            <h4>Software Trainee</h4>
+            <h3><b>Aion Power, Finland | Nov 2023 – Feb 2024</b></h3>
+            <h4><b>Software Trainee</b></h4>
             <ul>
               <li>Assisted in LabVIEW software development, testing, and documentation.</li>
               <li>Contributed to the development of the company's software development environment and practices.</li>
@@ -73,14 +73,14 @@ function Hero() {
           <hr className="divider" />
           {/* Konecranes */}
           <div className="work-experience">
-            <h4>Konecranes, Finland</h4>
-            <h4>Innovation Project Course | Sept 2023 – December 2023</h4>
+            <h3><b>Konecranes, Finland</b></h3>
+            <h4><b>Innovation Project Course | Sept 2023 – December 2023</b></h4>
             <ul>
               <li>Explored advanced industrial automation concepts using ESP32 microcontrollers, focusing on UART, WebSocket communication, and Wi-Fi data transmission.</li>
               <li>Collaborated with industry professionals from Konecranes to enhance real-world problem-solving skills and integrate IoT solutions.</li>
               <li>Designed and executed a comprehensive project demonstrating timer control and seamless data exchange, highlighting practical application of learned concepts.</li>
             </ul>
-            <h4>Software designer – summer trainee May 2023 – August 2023</h4>
+            <h4><b>Software designer – summer trainee May 2023 – August 2023</b></h4>
             <ul>
               <li>Software development of embedded crane control system board.</li>
               <li>Software documentation.</li>
