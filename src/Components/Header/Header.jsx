@@ -4,19 +4,11 @@ import "./Header.css";
 import logo from "../../assets/logo.svg";
 
 export const Header = () => {
-  const [menu, setMenu] = useState("home");
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false); 
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleContactClick = () => {
-    if (location.pathname !== "/") {
-      navigate("/#contact");
-    } else {
-      window.location.hash = "#contact";
-    }
-    setMenu("Contact");
-  };
+  const isActive = (path) => location.pathname === path;
 
   return (
     <header id="home" className="header">
@@ -37,64 +29,24 @@ export const Header = () => {
       {/* Navigation Menu */}
       <nav className={`nav-container ${isMobileMenuOpen ? "active" : ""}`}>
         <ul className="nav-menu">
-          <li
-            className={menu === "home" ? "active" : ""}
-            onClick={() => {
-              setMenu("home");
-              navigate("/");
-              setMobileMenuOpen(false); 
-            }}
-          >
-            <p>Home</p>
+          <li className={isActive("/") ? "active" : ""}>
+            <p onClick={() => navigate("/")}>Home</p>
           </li>
-          <li
-            className={menu === "Projects" ? "active" : ""}
-            onClick={() => {
-              setMenu("Projects");
-              navigate("/projects");
-              setMobileMenuOpen(false);
-            }}
-          >
+          <li className={isActive("/projects") ? "active" : ""}>
             <Link to="/projects">Projects</Link>
           </li>
-          <li
-            className={menu === "Blog" ? "active" : ""}
-            onClick={() => {
-              setMenu("Blog");
-              navigate("/blog");
-              setMobileMenuOpen(false);
-            }}
-          >
+          <li className={isActive("/blog") ? "active" : ""}>
             <Link to="/blog">Blog</Link>
           </li>
-
-          <li
-            className={menu === "Contact" ? "active" : ""}
-            onClick={() => {
-              handleContactClick();
-              setMobileMenuOpen(false);
-            }}
-          >
-            <p>Contact</p>
+          <li className={isActive("/contact") ? "active" : ""}>
+            <Link to="/contact">Contact</Link>
           </li>
-          <li
-            className={menu === "CV" ? "active" : ""}
-            onClick={() => {
-              setMenu("CV");
-              setMobileMenuOpen(false);
-            }}
-          >
+          <li>
             <a href="/cv.pdf" download="Ha_Do_CV.pdf">
               CV
             </a>
           </li>
-          <li
-            className={menu === "Github" ? "active" : ""}
-            onClick={() => {
-              setMenu("Github");
-              setMobileMenuOpen(false);
-            }}
-          >
+          <li>
             <a
               href="https://github.com/khanhhado1208"
               target="_blank"
