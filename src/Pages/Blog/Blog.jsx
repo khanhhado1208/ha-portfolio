@@ -12,7 +12,7 @@ export const Blog = () => {
         along with other topics I find interesting. Stay tuned for updates!
       </h3>
       <p className="note">
-        Note: Some of my reports, like those written in R or Jupyter Notebook, are better suited for this blog format
+        Note: Some of my reports, like those written in R or Jupyter Lab, are better suited for this blog format
         instead of the Projects section.
       </p>
       <div className="blog-list">

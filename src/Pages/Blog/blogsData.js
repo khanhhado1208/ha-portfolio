@@ -2,9 +2,10 @@ export const blogsData = [
   {
     id: "1",
     title: "Statistical Analysis of Living Habits",
-    excerpt: "A comprehensive analysis of living habits based on data by using Jupyter Notebook.",
+    excerpt: "A comprehensive analysis of living habits based on data by using Jupyter Lab.",
     date: "November 23, 2024", 
     thumbnail: "https://skillfine.com/wp-content/uploads/2023/03/4.jpg",
+    content: "<p>This blog is directly written in the blogsData array.</p>",
     htmlPath: "/files/report.html", 
     fileDownloads: [ 
       {
