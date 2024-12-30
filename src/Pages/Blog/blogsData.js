@@ -17,19 +17,19 @@ export const blogsData = [
       },
     ],
   },
-  /* 
+  
   {
     id: "2",
-    title: "Exploring Machine Learning in Python",
-    excerpt: "An introduction to machine learning using popular Python libraries like scikit-learn.",
+    title: "Bayesian Probabilistic Programming in R",
+    excerpt: "A simple Bayesian probabilistic practice project in R.",
     date: "December 5, 2024", 
-    thumbnail: "https://miro.medium.com/v2/resize:fit:1200/format:webp/1*o2QozZB-9wAXUdb4n3ACNQ.jpeg",
-    htmlPath: "/files/ml_intro.html", 
-    fileDownloads: [ 
+    thumbnail: "https://s1.adlibris.com/images/2711552/bayesian-data-analysis.jpg",
+    htmlPath: "/files/bayesian_report.html", 
+    sourceCode: [ 
       {
-        fileName: "ml_examples.py",
-        filePath: "/files/ml_examples.py",
-      },
+        fileName: "Source Code on GitHub",
+        filePath: "https://github.com/khanhhado1208/Bayesian-Probabilistic-programming",
+      }
     ],
-  }, */
+  }, 
 ];
