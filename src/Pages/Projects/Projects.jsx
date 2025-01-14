@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import quoteGeneratorImg from "../../assets/quote-generator.png";
+import project2 from "../../assets/project2.png";
 
 export const Projects = () => {
   const [showFullText, setShowFullText] = useState(false);
@@ -15,12 +16,8 @@ export const Projects = () => {
       <h3>
         Welcome to my Projects! I'm actively working on ideas and prototypes related to robotics, autonomous systems, and software engineering.
         In the near future, this section will feature implementations of ROS-based systems, C++ algorithms, and other innovative solutions. Stay tuned as I continue to develop and share my work here!
-
-
       </h3>
-      <p className="note">
-        Note: Many of my ROS-based projects are developed in Linux environments and require specific configurations to run. For these, I may include video demos, HTML files, or GitHub links to provide insights and easy access.
-      </p>
+     
       <section className="projects-list">
         <div className="project-card">
           <img
@@ -47,6 +44,34 @@ export const Projects = () => {
           <div className="project-links">
             <a href="https://quote-generator-ha-do.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
             <a href="https://github.com/khanhhado1208/quote-generator.git" target="_blank" rel="noopener noreferrer">Source Code</a>
+          </div>
+        </div>
+
+
+        <div className="project-card">
+          <img
+            src={project2}
+            alt="Simple publisher and subscriber"
+            className="project-image"
+          />
+          <h2>Simple publisher and subscriber  </h2>
+          <p>
+          The <strong>demo</strong> demonstrates a simple publisher and subscriber implementation in C++ and Python using ROS 2 Jazzy Jalisco distribution on Ubuntu 24.04
+            {" "}
+            {showFullText && (
+              <>
+                The publisher sends string messages on the /robot_news topic, and the subscriber logs the received messages in the console. The demo includes building the nodes with colcon, using std_msgs
+                <br />
+                The API source code is available <a href="https://github.com/khanhhado1208/Simple-publisher-and-subscriber-ROS2.git" target="_blank" rel="noopener noreferrer">here</a>
+              </>
+            )}
+          </p>
+          <button className="read-more-button" onClick={toggleReadMore}>
+            {showFullText ? "Read Less" : "Read More"}
+          </button>
+          <div className="project-links">
+            <a href="https://www.youtube.com/watch?v=tBag6qvKsL8" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a href="https://github.com/khanhhado1208/Simple-publisher-and-subscriber-ROS2.git" target="_blank" rel="noopener noreferrer">Source Code</a>
           </div>
         </div>
 
