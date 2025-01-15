@@ -38,7 +38,7 @@ export const Projects = () => {
       fullDescription:
         "The publisher sends string messages on the /robot_news topic, and the subscriber logs the received messages in the console...",
       image: project2,
-      demoLink: "https://www.youtube.com/watch?v=tBag6qvKsL8",
+      demoLink: "https://youtu.be/_FySTpNUC7U",
       sourceLink:
         "https://github.com/khanhhado1208/Simple-publisher-and-subscriber-ROS2.git",
       techStack: ["ROS 2", "C++", "Python", "Jazzy", "Ubuntu 24.04"],
