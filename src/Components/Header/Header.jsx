@@ -8,15 +8,19 @@ export const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => {
+    if (path === "/blog") {
+      return location.pathname.startsWith("/blog");
+    }
+    return location.pathname === path;
+  };
 
   return (
-    <header id="home" className="header">
+    <header className="header">
       <div className="logo" onClick={() => navigate("/")}>
         <img src={logo} alt="Logo" style={{ width: "200px", height: "70px" }} />
       </div>
 
-      {/* Hamburger Menu */}
       <div
         className={`hamburger ${isMobileMenuOpen ? "active" : ""}`}
         onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
@@ -26,11 +30,10 @@ export const Header = () => {
         <div></div>
       </div>
 
-      {/* Navigation Menu */}
       <nav className={`nav-container ${isMobileMenuOpen ? "active" : ""}`}>
         <ul className="nav-menu">
           <li className={isActive("/") ? "active" : ""}>
-            <p onClick={() => navigate("/")}>Home</p>
+            <Link to="/">Home</Link>
           </li>
           <li className={isActive("/projects") ? "active" : ""}>
             <Link to="/projects">Projects</Link>
@@ -42,7 +45,7 @@ export const Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="/cv.pdf" download="Ha_Do_CV.pdf">
+            <a href="/cv.pdf" download>
               CV
             </a>
           </li>
@@ -56,13 +59,11 @@ export const Header = () => {
             </a>
           </li>
         </ul>
-
         <div className="nav-connect">
           <a
             href="https://www.linkedin.com/in/hakhanhdo/"
             target="_blank"
             rel="noopener noreferrer"
-            className="linkedin-link"
           >
             Connect With Me on LinkedIn
           </a>

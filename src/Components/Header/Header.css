@@ -4,16 +4,18 @@
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0px;
+  justify-content: center; /* Center the entire content horizontally */
+  padding: 0 20px; /* Added horizontal padding for better spacing */
   height: 80px;
   width: 100%;
   box-sizing: border-box;
-  background-color: rgb(197, 193, 193);
+  background-color: rgb(223, 231, 221);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
+  position: absolute;
+  left: 20px; /* Keep logo on the left */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -21,47 +23,39 @@
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center navigation menu */
   align-items: center;
   width: 100%;
-}
-
-.nav-container.active {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: rgb(197, 193, 193);
-  padding: 20px;
-  border-top: 1px solid #ccc;
 }
 
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 60px;
-  margin: auto;
+  gap: 40px; /* Adjust the spacing between links */
+  margin: 0; /* Ensure no extra margin */
+  padding: 0; /* Ensure no extra padding */
+  justify-content: center; /* Center the links */
 }
 
 .nav-menu li {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: center; /* Vertically center items */
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.nav-menu li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-menu li p,
-.nav-menu li a {
+.nav-menu li a,
+.nav-menu li p {
   font-size: 16px;
   font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  line-height: 1; /* Consistent line height */
+  vertical-align: middle; /* Align text vertically */
 }
 
-/* Gradient text for active menu */
 .nav-menu li.active p,
 .nav-menu li.active a {
   background: linear-gradient(90deg, #da7c25, #b923e1);
@@ -74,7 +68,7 @@
 .nav-menu li::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -3px; /* Adjusted to bring underline closer */
   left: 0;
   width: 0;
   height: 3px;
@@ -87,7 +81,6 @@
   width: 100%;
 }
 
-/* Hover effect */
 .nav-menu li:hover p,
 .nav-menu li:hover a {
   background: linear-gradient(90deg, #b923e1, #da7c25);
@@ -97,7 +90,9 @@
 
 /* Navigation Connect Button */
 .nav-connect {
-  padding: 15px 30px;
+  position: absolute;
+  right: 20px; /* Keep button on the far right */
+  padding: 10px 20px;
   border-radius: 50px;
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1);
   font-size: 16px;
@@ -188,5 +183,9 @@
 
   .nav-container.active {
     padding: 10px;
+  }
+
+  .nav-menu li {
+    gap: 10px;
   }
 }

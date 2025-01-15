@@ -23,20 +23,25 @@ export const BlogDetail = () => {
   }, [blog?.htmlPath]);
 
   if (!blog) {
-    return <h1>Blog not found</h1>;
+    return (
+      <div className="blog-detail">
+        <h1>Blog not found</h1>
+        <p>The blog you're looking for does not exist or has been removed.</p>
+      </div>
+    );
   }
 
   return (
     <div className="blog-detail">
       <h1>{blog.title}</h1>
-      <p>{blog.date}</p>
+      <p className="blog-date">{blog.date}</p>
 
       {/* Blog Content Section */}
       <div className="blog-content">
         {blog.htmlPath ? (
           <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         ) : (
-          <div dangerouslySetInnerHTML={{ __html: blog.content || "No content available." }} />
+          <p>No content available.</p>
         )}
       </div>
 
@@ -51,6 +56,7 @@ export const BlogDetail = () => {
                   href={file.filePath}
                   download={file.fileName}
                   className="download-link"
+                  aria-label={`Download ${file.fileName}`}
                 >
                   📥 {file.fileName}
                 </a>
@@ -72,6 +78,7 @@ export const BlogDetail = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="source-code-link"
+                  aria-label={`View ${source.fileName}`}
                 >
                   💻 {source.fileName}
                 </a>
