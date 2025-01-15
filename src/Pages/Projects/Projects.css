@@ -78,3 +78,29 @@ h1 {
   transform: scale(1.1);
   color: rgb(201, 82, 181); 
 }
+
+.project-tech-stack {
+  margin-top: 10px;
+  text-align: center; 
+}
+
+.project-tech-stack ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.project-tech-stack li {
+  background: #e6e6fa;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
