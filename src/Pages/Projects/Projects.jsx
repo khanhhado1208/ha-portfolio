@@ -23,12 +23,12 @@ export const Projects = () => {
       description:
         "The Quote Generator in Squid Game movie is a simple web application I built as a learning project.",
       fullDescription:
-        "Inspired by a YouTube tutorial about React, I decided to take it further by creating my own custom API using Node.js and Express...",
+        "Inspired by a YouTube tutorial about React, I decided to take it further by creating my own custom API using Node.js and Express..",
       image: quoteGeneratorImg,
       demoLink: "https://quote-generator-ha-do.vercel.app/",
       sourceLink: "https://github.com/khanhhado1208/quote-generator.git",
       apiLink: "https://github.com/khanhhado1208/squidGame-API.git",
-      techStack: ["React", "Node.js", "Express", "Vercel", "CSS"],
+      techStack: ["React", "Node.js", "Express", "HTML", "CSS"],
     },
     {
       id: "project2",
@@ -90,6 +90,15 @@ export const Projects = () => {
               >
                 Source Code
               </a>
+              {project.apiLink && (
+                <a
+                  href={project.apiLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  API
+                </a>
+              )}
             </div>
             <div className="project-tech-stack">
               <h4>Tech Stack:</h4>
