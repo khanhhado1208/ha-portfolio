@@ -23,7 +23,7 @@ export const Projects = () => {
       description:
         "The Quote Generator in Squid Game movie is a simple web application I built as a learning project.",
       fullDescription:
-        "Inspired by a YouTube tutorial about React, I decided to take it further by creating my own custom API using Node.js and Express..",
+        "Inspired by a YouTube tutorial about React, I decided to take it further by creating my own custom API using Node.js and Express.",
       image: quoteGeneratorImg,
       demoLink: "https://quote-generator-ha-do.vercel.app/",
       sourceLink: "https://github.com/khanhhado1208/quote-generator.git",
@@ -36,7 +36,7 @@ export const Projects = () => {
       description:
         "The demo demonstrates a simple publisher and subscriber implementation in C++ and Python using ROS 2 Jazzy Jalisco distribution on Ubuntu 24.04.",
       fullDescription:
-        "The publisher sends string messages on the /robot_news topic, and the subscriber logs the received messages in the console...",
+        "The publisher sends string messages on the /robot_news topic, and the subscriber logs the received messages in the console.",
       image: project2,
       demoLink: "https://youtu.be/_FySTpNUC7U",
       sourceLink:
@@ -50,10 +50,7 @@ export const Projects = () => {
       <h2>My Projects</h2>
       <h3>
         Welcome to my Projects! I'm actively working on ideas and prototypes
-        related to robotics, autonomous systems, and software engineering. In
-        the near future, this section will feature implementations of ROS-based
-        systems, C++ algorithms, and other innovative solutions. Stay tuned as
-        I continue to develop and share my work here!
+        related to robotics, autonomous systems, and software engineering. Stay tuned as I continue to develop and share my work here!
       </h3>
 
       <section className="projects-list">
