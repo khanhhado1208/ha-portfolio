@@ -4,8 +4,8 @@
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the entire content horizontally */
-  padding: 0 20px; /* Added horizontal padding for better spacing */
+  justify-content: space-between; 
+  padding: 0 20px;
   height: 80px;
   width: 100%;
   box-sizing: border-box;
@@ -13,50 +13,46 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo Styles */
 .logo {
-  position: absolute;
-  left: 20px; /* Keep logo on the left */
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
+/* Navigation Container */
 .nav-container {
   display: flex;
-  justify-content: center; /* Center navigation menu */
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
+/* Navigation Menu */
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 40px; /* Adjust the spacing between links */
-  margin: 0; /* Ensure no extra margin */
-  padding: 0; /* Ensure no extra padding */
-  justify-content: center; /* Center the links */
+  gap: 40px; /* Adjust spacing between links */
+  margin: 0;
+  padding: 0;
 }
 
 .nav-menu li {
   position: relative;
   display: flex;
-  align-items: center; /* Vertically center items */
+  align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.nav-menu li a,
-.nav-menu li p {
+.nav-menu li a {
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
   color: inherit;
-  display: inline-block;
-  line-height: 1; /* Consistent line height */
-  vertical-align: middle; /* Align text vertically */
+  line-height: 1;
 }
 
-.nav-menu li.active p,
 .nav-menu li.active a {
   background: linear-gradient(90deg, #da7c25, #b923e1);
   -webkit-background-clip: text;
@@ -64,11 +60,11 @@
   font-weight: bold;
 }
 
-/* Underline animation */
+/* Underline Animation */
 .nav-menu li::after {
   content: "";
   position: absolute;
-  bottom: -3px; /* Adjusted to bring underline closer */
+  bottom: -3px;
   left: 0;
   width: 0;
   height: 3px;
@@ -81,7 +77,7 @@
   width: 100%;
 }
 
-.nav-menu li:hover p,
+/* Hover Effect */
 .nav-menu li:hover a {
   background: linear-gradient(90deg, #b923e1, #da7c25);
   -webkit-background-clip: text;
@@ -90,14 +86,15 @@
 
 /* Navigation Connect Button */
 .nav-connect {
-  position: absolute;
-  right: 20px; /* Keep button on the far right */
+  margin-left: 150px;
   padding: 10px 20px;
   border-radius: 50px;
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1);
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
+  display: flex; 
+  align-items: center; 
 }
 
 .nav-connect a {
@@ -106,29 +103,29 @@
   font-weight: bold;
 }
 
-.nav-connect a:hover {
-  text-decoration: underline;
-}
-
 .nav-connect:hover {
   transform: scale(1.05);
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu Styles */
 .hamburger {
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  z-index: 1100; 
 }
 
 .hamburger div {
   width: 25px;
   height: 3px;
   background-color: #000;
-  margin: 4px;
+  margin: 4px 0;
   transition: all 0.3s ease;
 }
 
+/* Hamburger Active State */
 .hamburger.active div:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -141,18 +138,19 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
   .nav-container {
+    display: none;
     position: absolute;
     top: 100%;
-    left: 0;
     right: 0;
-    display: none;
+    left: 0;
     flex-direction: column;
-    gap: 20px;
     background-color: rgb(197, 193, 193);
     padding: 20px;
     border-top: 1px solid #ccc;
+    z-index: 1000;
   }
 
   .nav-container.active {
@@ -166,26 +164,32 @@
     font-size: 14px;
   }
 
-  .hamburger {
-    display: flex;
-  }
-
   .nav-connect {
     margin-top: 20px;
     align-self: center;
   }
+
+  .hamburger {
+    display: flex;
+  }
 }
 
+/* Smaller Devices */
 @media screen and (max-width: 480px) {
   .header {
     height: 70px;
   }
 
-  .nav-container.active {
+  .nav-container {
     padding: 10px;
   }
 
   .nav-menu li {
-    gap: 10px;
+    gap: 15px;
+  }
+
+  .nav-connect {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
