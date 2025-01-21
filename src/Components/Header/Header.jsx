@@ -8,6 +8,7 @@ export const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Determine if a link is active
   const isActive = (path) => {
     if (path === "/blog") {
       return location.pathname.startsWith("/blog");
@@ -15,9 +16,15 @@ export const Header = () => {
     return location.pathname === path;
   };
 
+  // Handle navigation and close menu
+  const handleNavigation = (path) => {
+    setMobileMenuOpen(false); 
+    navigate(path); 
+  };
+
   return (
     <header className="header">
-      <div className="logo" onClick={() => navigate("/")}>
+      <div className="logo" onClick={() => handleNavigation("/")}>
         <img src={logo} alt="Logo" style={{ width: "200px", height: "70px" }} />
       </div>
 
@@ -33,27 +40,26 @@ export const Header = () => {
       <nav className={`nav-container ${isMobileMenuOpen ? "active" : ""}`}>
         <ul className="nav-menu">
           <li className={isActive("/") ? "active" : ""}>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
           </li>
           <li className={isActive("/projects") ? "active" : ""}>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
           </li>
           <li className={isActive("/blog") ? "active" : ""}>
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
           </li>
           <li className={isActive("/contact") ? "active" : ""}>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
           </li>
           <li>
-            <a href="/cv.pdf" download>
-              CV
-            </a>
+            <a href="/cv.pdf" download onClick={() => setMobileMenuOpen(false)}>CV</a>
           </li>
           <li>
             <a
               href="https://github.com/khanhhado1208"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Github
             </a>
@@ -64,6 +70,7 @@ export const Header = () => {
             href="https://www.linkedin.com/in/hakhanhdo/"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
           >
             Connect With Me on LinkedIn
           </a>
