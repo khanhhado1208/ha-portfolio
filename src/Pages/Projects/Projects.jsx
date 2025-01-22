@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import quoteGeneratorImg from "../../assets/quote-generator.png";
-import project2 from "../../assets/project2.png";
+import project2 from "../../assets/project2.jpeg";
 
 export const Projects = () => {
   const [showFullText, setShowFullText] = useState({
@@ -21,7 +21,7 @@ export const Projects = () => {
       id: "project1",
       name: "Squid Game Quote Generator",
       description:
-        "The Quote Generator in Squid Game movie is a simple web application I built as a learning project.",
+        "The Quote Generator in Squid Game movie is a simple web application I built as a learning project. It will generate some quotes from characters in Squid Game movie. ",
       fullDescription:
         "Inspired by a YouTube tutorial about React, I decided to take it further by creating my own custom API using Node.js and Express...",
       image: quoteGeneratorImg,
@@ -103,6 +103,15 @@ export const Projects = () => {
               >
                 Source Code
               </a>
+              {project.apiLink && (
+                <a
+                  href={project.apiLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  API
+                </a>
+              )}
             </div>
             <div className="project-tech-stack">
               <h4>Tech Stack:</h4>

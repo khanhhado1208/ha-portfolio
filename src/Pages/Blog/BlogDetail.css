@@ -46,7 +46,7 @@
 .source-code-link {
   color: #0056b3;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: auto;
 }
 
 .download-link:hover,
