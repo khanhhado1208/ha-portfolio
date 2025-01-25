@@ -41,8 +41,8 @@ function Hero() {
           <h2><u>Skills</u></h2>
           <div className="about-skills">
             <div className="about-skill">Programming languages: C, C++, embedded C, Python, R, JavaScript, Nodejs, HTML, CSS, VHDL.</div>
-            <div className="about-skill">Database: MongoDB.</div>
-            <div className="about-skill">Tools and Platforms: Microsoft Office, Jira, Jenkins, Confluence, ROS2, Linux.</div>
+            <div className="about-skill">Database: SQL Server, MongoDB.</div>
+            <div className="about-skill">Tools and Platforms: Microsoft Office, Jira, Jenkins, Confluence, ROS2, Linux, Power BI.</div>
             <div className="about-skill">Other skills: Communication Skills, Customer Services, CI/CD, Scrum, Test Automation Frameworks, Agile Methodologies.</div>
           </div>
         </div>
