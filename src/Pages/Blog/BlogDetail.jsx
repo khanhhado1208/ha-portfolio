@@ -45,6 +45,20 @@ export const BlogDetail = () => {
         )}
       </div>
 
+      {/* Demo Button Section */}
+      {blog.demoLink && (
+        <div className="demo-section">
+          <a
+            href={blog.demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="demo-button"
+          >
+            View Demo
+          </a>
+        </div>
+      )}
+
       {/* Download Files Section */}
       {blog.fileDownloads?.length > 0 && (
         <div className="download-section">
