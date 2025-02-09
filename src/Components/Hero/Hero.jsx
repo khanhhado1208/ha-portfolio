@@ -69,7 +69,7 @@ function Hero() {
             <h3><b>Konecranes, Finland</b></h3>
             <h4><b>Innovation Project Course | Sept 2023 – Dec 2023</b></h4>
             <ul className="skills-list">
-            <li>Explored advanced industrial automation concepts using ESP32 microcontrollers, focusing on UART, WebSocket communication, and Wi-Fi data transmission.</li>
+              <li>Explored advanced industrial automation concepts using ESP32 microcontrollers, focusing on UART, WebSocket communication, and Wi-Fi data transmission.</li>
               <li>Collaborated with industry professionals from Konecranes to enhance real-world problem-solving skills and integrate IoT solutions.</li>
               <li>Designed and executed a comprehensive project demonstrating timer control and seamless data exchange, highlighting practical application of learned concepts.</li>
             </ul>
@@ -86,14 +86,17 @@ function Hero() {
 
       {/* Projects Section */}
       <div className="section">
-        <div className="section-content">
+        <div className="section-content projects">
           <h2><u>Projects</u></h2>
           <p>
             I enjoy exploring new technologies to enhance my skills. Currently, I am learning ROS2 with C++ and working on a small project to deepen my understanding.
             Additionally, I have taken courses in data analysis, with a keen interest in AI, machine learning, and computer vision, aiming to apply these to robotics.
+            Feel free to explore my <a href="https://www.ha-robo.com/blog" target="_blank" rel="noopener noreferrer">Blog Section</a> and
+            <a href="https://www.ha-robo.com/projects" target="_blank" rel="noopener noreferrer"> Projects Section</a>.
           </p>
         </div>
       </div>
+
     </div>
   );
 }
