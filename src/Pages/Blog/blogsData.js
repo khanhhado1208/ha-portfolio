@@ -53,4 +53,18 @@ export const blogsData = [
     ],
     demoLink: "https://youtu.be/uVtytVN5Q6Q",
   },
+  {
+    id: "4",
+    title: "Energy Consumption Prediction for Ro-Ro Vessels",
+    excerpt: "A machine learning project to predict energy consumption of Ro-Ro vessels based on sensor data.",
+    date: "September 2, 2025",
+    thumbnail: "https://miro.medium.com/v2/resize:fit:1010/1*R3oJiyaQwyLUyLZL-scDpw.png",
+    htmlPath: "/files/blog4.html",
+    sourceCode: [
+      {
+        fileName: "Source Code on GitHub",
+        filePath: "https://github.com/khanhhado1208/Energy-Consumption-Prediction-for-Ro-Ro-Vessels",
+      },
+    ],
+  },
 ];
