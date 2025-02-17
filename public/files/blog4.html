@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>project1</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=0j1v5tGiiT8G01tsaMxXPGzoaqym99vhuqKhXktLTQqgfIb4rSeacI6RBhxgv3D0SG_hkpG47KzZx4tKVcE6d_hTrWLFaOdNlwlvPnQk8g2NMpM2WhtCekR0vsxviTEL3WmV6OHCiq7ORE98mMeaqmja2Tmzp37oe_nAVOqXmNI" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>project1</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=zlb95LByjLz-iMF03QShCR1i5z7UxCKLY2l9NEubgU2XTeDC8LDkfnF0KQVXsJLEW9yFdlANhSe9ULUlsqR3JtYO5uUkOnG3pygDlYd-_SZN52TbGUIyiIcHvmfGRK7CWR6V4JE5pHBVlkc0cIIfKcF1cSue66QxylOhn_l-XRU" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7841,7 +7841,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6b1e015b-9754-490a-8766-4002c246839b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=49f702c9-ce51-41bb-a314-069f2b08b2be">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7849,8 +7849,9 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Check dataFrame size</span>
-<span class="n">df_merged</span><span class="o">.</span><span class="n">shape</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Convert timestamp to datetime</span>
+<span class="n">df_merged</span><span class="p">[</span><span class="s1">'timestamp'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_merged</span><span class="p">[</span><span class="s1">'timestamp'</span><span class="p">],</span> <span class="n">origin</span><span class="o">=</span><span class="s1">'unix'</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">'ns'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_merged</span><span class="p">[</span><span class="s1">'timestamp'</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -7860,41 +7861,28 @@ a.anchor-link {
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>(1627324, 3)</pre>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0   1990-02-03 04:25:42.119225390
+1   1990-02-03 04:25:42.129597610
+2   1990-02-03 04:25:42.139821660
+3   1990-02-03 04:25:42.150036040
+4   1990-02-03 04:26:52.935606850
+Name: timestamp, dtype: datetime64[ns]
+</pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d2b0e7e4-cd38-4f40-9f65-3d8e04041c1a">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=512456a1-fc55-4c8e-ac12-b422607341c6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Check data types</span>
-<span class="n">df_merged</span><span class="o">.</span><span class="n">dtypes</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>timestamp               int64
-fuelDensity           float64
-fuelVolumeFlowRate    float64
-dtype: object</pre>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h5 id="The-timestamp-in-the-dataset-appears-to-be-incorrect,-showing-the-date-in-1990-instead-of-2010.-The-timestamps-will-be-converted-using-pd.to_datetime(origin='unix',-unit='ns')-and-adjusted-them-using-pd.DateOffset(years=20)">The timestamp in the dataset appears to be incorrect, showing the date in 1990 instead of 2010. The timestamps will be converted using pd.to_datetime(origin='unix', unit='ns') and adjusted them using pd.DateOffset(years=20)<a class="anchor-link" href="#The-timestamp-in-the-dataset-appears-to-be-incorrect,-showing-the-date-in-1990-instead-of-2010.-The-timestamps-will-be-converted-using-pd.to_datetime(origin='unix',-unit='ns')-and-adjusted-them-using-pd.DateOffset(years=20)">¶</a></h5>
 </div>
 </div>
 </div>
@@ -7903,12 +7891,50 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Convert timestamp to 2010 by using pd.DateOffset(years=20)</span>
+<span class="n">df_merged</span><span class="p">[</span><span class="s1">'timestamp'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_merged</span><span class="p">[</span><span class="s1">'timestamp'</span><span class="p">],</span> <span class="n">origin</span><span class="o">=</span><span class="s1">'unix'</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">'ns'</span><span class="p">)</span> <span class="o">+</span> <span class="n">pd</span><span class="o">.</span><span class="n">DateOffset</span><span class="p">(</span><span class="n">years</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="c1"># Print again to check if timestamp was converted</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_merged</span><span class="p">[</span><span class="s1">'timestamp'</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>0   2010-02-03 04:25:42.119225390
+1   2010-02-03 04:25:42.129597610
+2   2010-02-03 04:25:42.139821660
+3   2010-02-03 04:25:42.150036040
+4   2010-02-03 04:26:52.935606850
+Name: timestamp, dtype: datetime64[ns]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d5bc5711-7f57-4338-862b-1d09943c46b2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Convert timestamp to datetime</span>
-<span class="n">df_merged</span><span class="p">[</span><span class="s1">'timestamp'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_merged</span><span class="p">[</span><span class="s1">'timestamp'</span><span class="p">],</span> <span class="n">origin</span><span class="o">=</span><span class="s1">'unix'</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">'ns'</span><span class="p">)</span>
-<span class="c1"># Print again to check if timestamp was converted</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Check data types</span>
+<span class="n">rows</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">df_merged</span><span class="o">.</span><span class="n">shape</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Number of rows: </span><span class="si">{</span><span class="n">rows</span><span class="si">}</span><span class="s2">, Number of columns: </span><span class="si">{</span><span class="n">columns</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Check dataFrame size</span>
 <span class="n">df_merged</span><span class="o">.</span><span class="n">dtypes</span>
 </pre></div>
 </div>
@@ -7919,6 +7945,13 @@ dtype: object</pre>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Number of rows: 1627324, Number of columns: 3
+</pre>
+</div>
+</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
@@ -8057,12 +8090,12 @@ Fuel Volume Flow Rate - Negative or Zero: 0
 <pre>[INFO] DataFrame Summary:
                            timestamp   fuelDensity  fuelVolumeFlowRate
 count                        1627251  1.627251e+06        1.627251e+06
-mean   1990-02-03 11:06:04.118258944  9.266985e-01        5.887074e-01
-min    1990-02-03 04:26:52.935606850  9.213957e-01        2.333965e-02
-25%    1990-02-03 07:48:59.021581952  9.251580e-01        5.875335e-01
-50%    1990-02-03 11:00:37.731312512  9.258807e-01        6.261147e-01
-75%    1990-02-03 14:13:56.163994112  9.272903e-01        6.530267e-01
-max    1990-02-03 17:44:39.162304710  9.547416e-01        9.468417e-01
+mean   2010-02-03 11:06:04.118259968  9.266985e-01        5.887074e-01
+min    2010-02-03 04:26:52.935606850  9.213957e-01        2.333965e-02
+25%    2010-02-03 07:48:59.021581824  9.251580e-01        5.875335e-01
+50%    2010-02-03 11:00:37.731312640  9.258807e-01        6.261147e-01
+75%    2010-02-03 14:13:56.163994112  9.272903e-01        6.530267e-01
+max    2010-02-03 17:44:39.162304710  9.547416e-01        9.468417e-01
 std                              NaN  2.459623e-03        1.191291e-01
 </pre>
 </div>
@@ -8080,7 +8113,7 @@ std                              NaN  2.459623e-03        1.191291e-01
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate the Energy Consumption (EC) target column </span>
 <span class="n">df_merged</span><span class="p">[</span><span class="s1">'EC'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_merged</span><span class="p">[</span><span class="s1">'fuelDensity'</span><span class="p">]</span> <span class="o">*</span> <span class="n">df_merged</span><span class="p">[</span><span class="s1">'fuelVolumeFlowRate'</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3600</span> <span class="o">*</span> <span class="mi">24</span><span class="p">)</span> <span class="o">/</span> <span class="mi">1000</span>
 
-<span class="c1"># Normalize data using StandardScaler to avoid bias between features with different units</span>
+<span class="c1"># Normalize data using StandardScaler to avoid bias between features, and bring all features to the same scale</span>
 <span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
 <span class="n">df_merged</span><span class="p">[[</span><span class="s1">'fuelDensity'</span><span class="p">,</span> <span class="s1">'fuelVolumeFlowRate'</span><span class="p">]]</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_merged</span><span class="p">[[</span><span class="s1">'fuelDensity'</span><span class="p">,</span> <span class="s1">'fuelVolumeFlowRate'</span><span class="p">]])</span>
 
@@ -8113,11 +8146,11 @@ fuelVolumeFlowRate    0
 EC                    0
 dtype: int64
                       timestamp  fuelDensity  fuelVolumeFlowRate         EC
-4 1990-02-03 04:26:52.935606850     4.718811           -2.559337  23.008844
-5 1990-02-03 04:26:52.945820680     4.665347           -2.598067  22.631633
-6 1990-02-03 04:26:52.956034910     4.609241           -2.567694  22.921554
-7 1990-02-03 04:26:52.966268860     4.587856           -2.583811  22.764660
-8 1990-02-03 04:26:52.976492840     4.500281           -2.592628  22.674334
+4 2010-02-03 04:26:52.935606850     4.718811           -2.559337  23.008844
+5 2010-02-03 04:26:52.945820680     4.665347           -2.598067  22.631633
+6 2010-02-03 04:26:52.956034910     4.609241           -2.567694  22.921554
+7 2010-02-03 04:26:52.966268860     4.587856           -2.583811  22.764660
+8 2010-02-03 04:26:52.976492840     4.500281           -2.592628  22.674334
 [INFO] Statistics of scaled features:
         fuelDensity  fuelVolumeFlowRate
 count  1.627251e+06        1.627251e+06
@@ -8130,6 +8163,17 @@ min   -2.155943e+00       -4.745844e+00
 max    1.140138e+01        3.006273e+00
 </pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=61349eef-a6a9-42c9-a61f-6fd3dda8db28">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h5 id="The-mean-value-is-close-to-0,-and-the-standard-deviation-is-1-after-normalization-for-both-fuelDensity-and-fuelVolumeFlowRate-after-applying-StandardScaler.-This-means-all-features-have-the-same-unit-scales,-preventing-bias.">The mean value is close to 0, and the standard deviation is 1 after normalization for both fuelDensity and fuelVolumeFlowRate after applying StandardScaler. This means all features have the same unit scales, preventing bias.<a class="anchor-link" href="#The-mean-value-is-close-to-0,-and-the-standard-deviation-is-1-after-normalization-for-both-fuelDensity-and-fuelVolumeFlowRate-after-applying-StandardScaler.-This-means-all-features-have-the-same-unit-scales,-preventing-bias.">¶</a></h5>
 </div>
 </div>
 </div>
@@ -8814,7 +8858,7 @@ max    1.140138e+01        3.006273e+00
 [INFO] Mean R² Score: 1.000
 [INFO] Cross-Validation R² Scores: [0.99758184 0.99764319 0.99762594 0.99762676 0.99767895]
 [INFO] Mean R² Score: 0.998
-[INFO] Cross-Validation R² Scores: [0.99781713 0.99788136 0.99785879 0.99786883 0.99788607]
+[INFO] Cross-Validation R² Scores: [0.99781515 0.99788827 0.99784871 0.99783943 0.99789729]
 [INFO] Mean R² Score: 0.998
 </pre>
 </div>
