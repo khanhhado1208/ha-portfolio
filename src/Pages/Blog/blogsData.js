@@ -67,4 +67,18 @@ export const blogsData = [
       },
     ],
   },
+  {
+    id: "5",
+    title: "CNN Weather Classification with VGG19",
+    excerpt: "Multi-class Weather Classification using Transfer Learning (VGG19). Implemented a CNN model using VGG19 to classify weather conditions (Cloudy, Rain, Shine, Sunrise).",
+    date: "February 17, 2025",
+    thumbnail: "https://www.researchgate.net/profile/Manuel-Lagunas/publication/325642953/figure/fig3/AS:635087276216320@1528428014281/Architecture-of-the-network-VGG19-The-network-has-16-convolutions-with-ReLUs-NH10.png",
+    htmlPath: "/files/blog5.html",
+    sourceCode: [
+      {
+        fileName: "Source Code on GitHub",
+        filePath: "https://github.com/khanhhado1208/CNN-Weather-Classification-with-VGG19",
+      },
+    ],
+  },
 ];
