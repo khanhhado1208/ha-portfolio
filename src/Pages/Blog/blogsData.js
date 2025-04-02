@@ -86,7 +86,7 @@ export const blogsData = [
     title: "Cat Detection with TensorFlow Object Detection API",
     excerpt: "I built a custom object detection model using TensorFlow’s Object Detection API to detect cats. Using a small dataset of 200 labeled images, I fine-tuned a Faster R-CNN ResNet101 model and achieved 100% accuracy on the test set. Training was tracked with TensorBoard and inference was integrated in a Jupyter notebook.",
     date: "March 04, 2025",
-    thumbnail: "https://private-user-images.githubusercontent.com/55555713/429296149-36fca0c8-13c8-428f-8f8b-485214d0ccc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM1NjMyMzcsIm5iZiI6MTc0MzU2MjkzNywicGF0aCI6Ii81NTU1NTcxMy80MjkyOTYxNDktMzZmY2EwYzgtMTNjOC00MjhmLThmOGItNDg1MjE0ZDBjY2MxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDAyVDAzMDIxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVjZjgyMWM5M2E0OGViNDdiM2ZjNzg1NGIwOTIyODgxYzAwMTMxMmQ1M2U4MjBiNzY4ZTg1ODAxZmEwYTM3NGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.MmSg2aV0hlVWMvDHburBy7o2T73AmapneGDT-FOdzaA",
+    thumbnail: "https://www.vision-ary.net/wp-content/uploads/2016/01/VISIONARY_cats_LBP_HOG.jpg",
     htmlPath: "/files/blog6.html",
     sourceCode: [
       {
