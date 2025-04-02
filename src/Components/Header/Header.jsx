@@ -18,8 +18,8 @@ export const Header = () => {
 
   // Handle navigation and close menu
   const handleNavigation = (path) => {
-    setMobileMenuOpen(false); 
-    navigate(path); 
+    setMobileMenuOpen(false);
+    navigate(path);
   };
 
   return (
@@ -51,9 +51,11 @@ export const Header = () => {
           <li className={isActive("/contact") ? "active" : ""}>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
           </li>
+          {/* 
           <li>
             <a href="/cv.pdf" download onClick={() => setMobileMenuOpen(false)}>CV</a>
           </li>
+          */}
           <li>
             <a
               href="https://github.com/khanhhado1208"

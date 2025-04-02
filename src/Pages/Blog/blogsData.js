@@ -55,15 +55,15 @@ export const blogsData = [
   },
   {
     id: "4",
-    title: "Energy Consumption Prediction for Ro-Ro Vessels",
-    excerpt: "A machine learning project to predict energy consumption of Ro-Ro vessels based on sensor data.",
+    title: "Muffin vs Chihuahua Image Classification",
+    excerpt: "A simple but fun deep learning project where I built a CNN with TensorFlow/Keras to classify images of muffins vs. chihuahuas. The model was trained with data augmentation and evaluated using accuracy, ROC curve, confusion matrix, and threshold tuning.",
     date: "September 2, 2025",
-    thumbnail: "https://miro.medium.com/v2/resize:fit:1010/1*R3oJiyaQwyLUyLZL-scDpw.png",
+    thumbnail: "https://cdn-media-1.freecodecamp.org/images/1*bt-E2YcPafjiPbZFDMMmNQ.jpeg",
     htmlPath: "/files/blog4.html",
     sourceCode: [
       {
         fileName: "Source Code on GitHub",
-        filePath: "https://github.com/khanhhado1208/Energy-Consumption-Prediction-for-Ro-Ro-Vessels",
+        filePath: "https://github.com/khanhhado1208/Muffin-vs-Chihuahua-Image-classification",
       },
     ],
   },
@@ -78,6 +78,20 @@ export const blogsData = [
       {
         fileName: "Source Code on GitHub",
         filePath: "https://github.com/khanhhado1208/CNN-Weather-Classification-with-VGG19",
+      },
+    ],
+  },
+  {
+    id: "6",
+    title: "Cat Detection with TensorFlow Object Detection API",
+    excerpt: "I built a custom object detection model using TensorFlow’s Object Detection API to detect cats. Using a small dataset of 200 labeled images, I fine-tuned a Faster R-CNN ResNet101 model and achieved 100% accuracy on the test set. Training was tracked with TensorBoard and inference was integrated in a Jupyter notebook.",
+    date: "March 04, 2025",
+    thumbnail: "https://private-user-images.githubusercontent.com/55555713/429296149-36fca0c8-13c8-428f-8f8b-485214d0ccc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM1NjMyMzcsIm5iZiI6MTc0MzU2MjkzNywicGF0aCI6Ii81NTU1NTcxMy80MjkyOTYxNDktMzZmY2EwYzgtMTNjOC00MjhmLThmOGItNDg1MjE0ZDBjY2MxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDAyVDAzMDIxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVjZjgyMWM5M2E0OGViNDdiM2ZjNzg1NGIwOTIyODgxYzAwMTMxMmQ1M2U4MjBiNzY4ZTg1ODAxZmEwYTM3NGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.MmSg2aV0hlVWMvDHburBy7o2T73AmapneGDT-FOdzaA",
+    htmlPath: "/files/blog6.html",
+    sourceCode: [
+      {
+        fileName: "Source Code on GitHub",
+        filePath: "https://github.com/khanhhado1208/Cat-Detection-with-TensorFlow-Object-Detection-API",
       },
     ],
   },

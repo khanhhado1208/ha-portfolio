@@ -23,7 +23,7 @@ export const Projects = () => {
       description:
         "The Quote Generator in Squid Game movie is a simple web application I built as a learning project. It will generate some quotes from characters in Squid Game movie. ",
       fullDescription:
-        "Inspired by a YouTube tutorial about React, I decided to take it further by creating my own custom API using Node.js and Express...",
+        "Inspired by a YouTube tutorial about React, I decided to take it further by creating my own custom API using Node.js and Express.",
       image: quoteGeneratorImg,
       demoLink: "https://quote-generator-ha-do.vercel.app/",
       sourceLink: "https://github.com/khanhhado1208/quote-generator.git",
@@ -36,7 +36,7 @@ export const Projects = () => {
       description:
         "The demo demonstrates a simple publisher and subscriber implementation in C++ and Python using ROS 2 Jazzy Jalisco distribution on Ubuntu 24.04.",
       fullDescription:
-        "The publisher sends string messages on the /robot_news topic, and the subscriber logs the received messages in the console...",
+        "The publisher sends string messages on the /robot_news topic, and the subscriber logs the received messages in the console.",
       image: project2,
       demoLink: "https://youtu.be/_FySTpNUC7U",
       sourceLink:
@@ -55,6 +55,19 @@ export const Projects = () => {
       sourceLink:
         "https://github.com/khanhhado1208/Simple-publisher-and-subscriber-ROS2.git",
       techStack: ["ROS 2", "C++", "Python", "Jazzy", "Ubuntu 24.04"],
+    },
+    {
+      id: "project4",
+      name: "3D Pyramid using OpenTK with C#",
+      description:
+        "This project is a 3D pyramid visualization using OpenTK, a .NET binding for OpenGL. The pyramid is rendered with a simple shader and basic 3D transformations such as rotation and projection.",
+      fullDescription:
+        "3D rendering: Displays a rotating 3D pyramid.\nShaders: Uses GLSL shaders for color and outline rendering.\nCamera: Implemented using perspective and model-view matrices.\nRotation: The pyramid rotates around the Y-axis.",
+      image: "https://private-user-images.githubusercontent.com/55555713/420574660-93941d34-fd2b-40f7-9bed-ed02e836685f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM1NjM4ODksIm5iZiI6MTc0MzU2MzU4OSwicGF0aCI6Ii81NTU1NTcxMy80MjA1NzQ2NjAtOTM5NDFkMzQtZmQyYi00MGY3LTliZWQtZWQwMmU4MzY2ODVmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDAyVDAzMTMwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEzZjMxZGM0NGQ0ZDlhOGVlMDlhNTJjNjExN2UwNjkxNWRhNmJmYzljODUzNWZlYmY5MWM3MjJlZTYzMTE5MzcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wKx8QTcQssxZOu8CRDEh1PJvmOv51wgD6QDoox_dH_E",
+      demoLink: "https://www.youtube.com/watch?v=sKQjmP1EdRs",
+      sourceLink:
+        "https://github.com/khanhhado1208/3D-Pyramid-OpenTK",
+      techStack: ["C#", ".NET 5.0 ", "OpenTK"],
     },
   ];
 
@@ -79,8 +92,18 @@ export const Projects = () => {
             />
             <h2>{project.name}</h2>
             <p>
-              {project.description}{" "}
-              {showFullText[project.id] && <>{project.fullDescription}</>}
+              {project.description}
+              {showFullText[project.id] && (
+                <>
+                  <br />
+                  {project.fullDescription.split("\n").map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </>
+              )}
             </p>
             <button
               className="read-more-button"
