@@ -63,7 +63,7 @@ export const Projects = () => {
         "This project is a 3D pyramid visualization using OpenTK, a .NET binding for OpenGL. The pyramid is rendered with a simple shader and basic 3D transformations such as rotation and projection.",
       fullDescription:
         "3D rendering: Displays a rotating 3D pyramid.\nShaders: Uses GLSL shaders for color and outline rendering.\nCamera: Implemented using perspective and model-view matrices.\nRotation: The pyramid rotates around the Y-axis.",
-      image: "https://github.com/khanhhado1208/3D-Pyramid-OpenTK/blob/master/3D-Pyramid.png",
+      image: "https://raw.githubusercontent.com/khanhhado1208/3D-Pyramid-OpenTK/refs/heads/master/3D-Pyramid.png",
       demoLink: "https://www.youtube.com/watch?v=sKQjmP1EdRs",
       sourceLink:
         "https://github.com/khanhhado1208/3D-Pyramid-OpenTK",
