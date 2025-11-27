@@ -63,7 +63,7 @@ export const Projects = () => {
         "This project is a 3D pyramid visualization using OpenTK, a .NET binding for OpenGL. The pyramid is rendered with a simple shader and basic 3D transformations such as rotation and projection.",
       fullDescription:
         "3D rendering: Displays a rotating 3D pyramid.\nShaders: Uses GLSL shaders for color and outline rendering.\nCamera: Implemented using perspective and model-view matrices.\nRotation: The pyramid rotates around the Y-axis.",
-      image: "https://private-user-images.githubusercontent.com/55555713/420574660-93941d34-fd2b-40f7-9bed-ed02e836685f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM1NjM4ODksIm5iZiI6MTc0MzU2MzU4OSwicGF0aCI6Ii81NTU1NTcxMy80MjA1NzQ2NjAtOTM5NDFkMzQtZmQyYi00MGY3LTliZWQtZWQwMmU4MzY2ODVmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDAyVDAzMTMwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEzZjMxZGM0NGQ0ZDlhOGVlMDlhNTJjNjExN2UwNjkxNWRhNmJmYzljODUzNWZlYmY5MWM3MjJlZTYzMTE5MzcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wKx8QTcQssxZOu8CRDEh1PJvmOv51wgD6QDoox_dH_E",
+      image: "https://raw.githubusercontent.com/khanhhado1208/3D-Pyramid-OpenTK/refs/heads/master/3D-Pyramid.png",
       demoLink: "https://www.youtube.com/watch?v=sKQjmP1EdRs",
       sourceLink:
         "https://github.com/khanhhado1208/3D-Pyramid-OpenTK",
