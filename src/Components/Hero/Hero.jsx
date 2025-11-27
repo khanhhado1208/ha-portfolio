@@ -13,7 +13,7 @@ function Hero() {
         <div className="hero-content">
           <h2>HÀ ĐỖ</h2>
           <p>
-            I am Hà, 1st-year master's student in Robotics and Autonomous Systems at the University of Turku. I am passionate about technology, especially robotics, and I enjoy reading books to expand my knowledge. In my free time, I like learning new things, such as programming languages or exploring the field of artificial intelligence.
+            I am Hà, 2nd-year master's student in Robotics and Autonomous Systems at the University of Turku. I am passionate about technology, especially robotics, and I enjoy reading books to expand my knowledge. In my free time, I like learning new things, such as programming languages or exploring the field of artificial intelligence.
           </p>
           <div className="slogan-container">
             <p className="slogan">
