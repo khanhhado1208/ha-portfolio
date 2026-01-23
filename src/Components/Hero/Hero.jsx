@@ -40,10 +40,11 @@ function Hero() {
         <div className="section-content">
           <h2><u>Skills</u></h2>
           <div className="about-skills">
-            <div className="about-skill">Programming languages: C, C++, embedded C, Python, R, JavaScript, Nodejs, HTML, CSS, VHDL.</div>
+            <div className="about-skill">Software & Systems: C, C++, embedded C, C#, JavaScript, Node.js, HTML, CSS, ROS2, Linux.</div>
+            <div className="about-skill">Machine learning & Data: Python, SQL, TensorFlow 2, PyTorch, Data analysis, statistical modelling, Power BI, Computer vision,
+transfer learning</div>
             <div className="about-skill">Database: SQL Server, MongoDB.</div>
-            <div className="about-skill">Tools and Platforms: Microsoft Office, Jira, Jenkins, Confluence, ROS2, Linux, Power BI.</div>
-            <div className="about-skill">Other skills: Communication Skills, Customer Services, CI/CD, Scrum, Test Automation Frameworks, Agile Methodologies.</div>
+            <div className="about-skill">Engineering Practices & Tools: Git, Jenkins, CI/CD, Agile / Scrum, Test automation, Jira, Confluence.</div>
           </div>
         </div>
       </div>
